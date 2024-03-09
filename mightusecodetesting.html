@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assignment_two</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <main>
+      <form name="myForm">
+        <h1>Customer Information Form</h1>
+        <p>
+          <em
+            >Please fill out the customer information form below to receive an
+            invoice. Fields marked with asterisks are mandatory.</em
+          >
+        </p>
+        <hr />
+        <div>
+          <label for="name">Name</label><br /><input
+            id="name"
+            type="text"
+            name="name"
+          />
+        </div>
+        <br />
+
+        <div>
+          <label for="address">Address</label><br /><input
+            id="address"
+            type="text"
+            name="address"
+          />
+        </div>
+        <br />
+
+        <div>
+          <label for="telephone">Telephone</label><br /><input
+            id="telephone"
+            type="text"
+            name="telephone"
+          />
+        </div>
+        <br />
+
+        <div>
+          <label for="email">Email</label><br /><input
+            id="email"
+            type="email"
+            name="email"
+          />
+        </div>
+
+        <br />
+        <div>
+          <p>
+            All customer information will be kept with descretion and will not
+            be used for other marketing or advertisment purposes without
+            customer's approval.
+          </p>
+        </div>
+
+        <div>
+          <input id="consent" type="checkbox" name="consent" />
+          <label for="consent"
+            >I allow the information provided to be used to send my proforma
+            invoice.</label
+          >
+        </div>
+        <br />
+        <button type="submit" value="submit">Submit</button>
+        <div id="response" style="color: green"></div>
+      </form>
+    </main>
+    <script src="./script.js"></script>
+  </body>
+</html>
+
+<!-- <script>
+      function validateForm() {
+        let x = document.forms["myForm"][("name", "address", "email", "telephone", "consent")].value;
+        let consent = document.forms["myForm"]["consent"].checked;
+        if (x == "") {
+          alert("Duya nor lef any field blank, we dae beg you");
+          return false;
+        }
+      }
+    </script> -->
